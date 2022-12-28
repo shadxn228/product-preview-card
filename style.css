@@ -1,0 +1,31 @@
+html, body {
+    min-width: 100%;
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.tyaletnayVoda {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 800px;
+}
+.details {
+    background-color: #fff;
+    padding-left: 15px;
+}
+p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+}
