@@ -1,31 +1,95 @@
-html, body {
-    min-width: 100%;
-    background-color: hsl(30, 38%, 92%);
-    height: 100%;
+/* font-family: 'Fraunces', serif;
+   font-family: 'Montserrat', sans-serif; */
+
+img {
+    max-width: 100%;
+    display: inherit;
 }
+
 body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
 }
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .tyaletnayVoda {
-    display: flex;
-    overflow: hidden;
-    border-radius: 10px;
     max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 15px;
 }
+
 .details {
     background-color: #fff;
-    padding-left: 15px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-p {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-}
+
 h1 {
     font-family: 'Fraunces', serif;
+    font-size: 45px;
+    color: hsl(212, 21%, 14%);
+    line-height: normal;
+}
+
+.title {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.descrip {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+    font-size: 17px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 45px;
+    padding-right: 25px;
+}
+
+.old-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 15px
+}
+
+.cart {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.cart:hover {
+    background-color: hsl(158, 36%, 20%);
 }
