@@ -88,8 +88,20 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 15px;
+    cursor: pointer;
+    transition: background-color .4s ease;
 }
 
 .cart:hover {
     background-color: hsl(158, 36%, 20%);
+}
+
+@media only screen and (max-width: 720px){
+    .tyaletnayVoda {
+        grid-template-columns: 1fr;
+        margin: 30px;
+    }
+    img {
+        object-fit: cover;
+    }
 }
